@@ -311,7 +311,7 @@ if submitted:
 
     res_col, prob_col = st.columns([3, 2])
 
-    with res_col:
+        with res_col:
         steps_html = ''.join(
             f'<div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">'
             f'<span style="color:{info["color"]};font-size:14px;">📍</span>'
@@ -339,8 +339,8 @@ if submitted:
         </div>
         """, unsafe_allow_html=True)
 
-        with prob_col:
-            st.markdown(f"""
+    with prob_col:
+        st.markdown(f"""
         <div style="background:white;border:1px solid #e5e7eb;border-radius:16px;padding:24px;">
             <div style="font-size:14px;font-weight:600;color:#111827;margin-bottom:16px;">
                 Confidence by department
